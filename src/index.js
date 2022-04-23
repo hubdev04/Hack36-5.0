@@ -34,7 +34,7 @@ var bodyParser=require("body-parser");
 const mongoose = require('mongoose');
 const { Console } = require('console');
 const console = require("console");
-mongoose.connect('mongodb://localhost:27017/gfg');
+mongoose.connect('mongodb://localhost:27017/new');
 var db=mongoose.connection;
 db.on('error', console.log.bind(console, "connection error"));
 db.once('open', function(callback){
@@ -104,7 +104,7 @@ app.get('/',function(req,res){
 // res.set({
 //     'Access-control-Allow-Origin': '*'
 //     });
- res.redirect('./public/HTML/index.html');
+ res.redirect('./index.html');
 });
   
   
